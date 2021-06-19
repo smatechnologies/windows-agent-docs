@@ -1,0 +1,61 @@
+module.exports = {
+  mySidebar: [
+    'index',
+    'release-notes',
+    {
+      type: 'category', 
+      label: 'Installation',
+      collapsed: false,
+      items: [
+        'installation/media',
+        'installation/install',
+        'installation/upgrade',
+        'installation/silent-mode',
+        'installation/multiple-instances',
+      ], 
+    },
+    {
+      type: 'category', 
+      label: 'Administration',
+      collapsed: false,
+      items: [
+        'administration/tls',
+        'administration/service-configuration',
+        'administration/configuration',
+        'administration/manage-lsam',
+        'administration/window-state',
+        'administration/scripts',
+        'administration/wrapper',
+        'administration/capture-stats',
+      ], 
+    },
+    {
+      type: 'category', 
+      label: 'Advanced features',
+      collapsed: false,
+      items: [
+        'advanced-features/embedded-scripts',
+        'advanced-features/ecof',
+        'advanced-features/file-arrival',
+        'advanced-features/file-transfer',
+        'advanced-features/genericp',
+        'advanced-features/jors',
+        'advanced-features/kill',
+        'advanced-features/logging',
+        'advanced-features/msgin',
+        'advanced-features/seterror',
+        'advanced-features/showrunning',
+        'advanced-features/smastatus',
+      ], 
+    },
+    {
+      type: 'category', 
+      label: 'Reference',
+      collapsed: false,
+      items: [
+        'reference/machine-messages',
+        'reference/environment-variables',
+      ], 
+    },
+  ],
+};
