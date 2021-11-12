@@ -12,7 +12,7 @@ If TLS client validation will be used, the same procedure must also be performed
 
 Please refer to Microsoft documentation for instructions about installing certificates in the Windows certificate store.
 
-Refer to [Communication Settings](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/Machines.htm#Communic) in the **Concepts** online help for general TLS security information.
+Refer to [Communication Settings](https://help.smatechnologies.com/opcon/core/objects/machines#communication-settings) in the **Concepts** online help for general TLS security information.
 
 ## Configuring TLS
 

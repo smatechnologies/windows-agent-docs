@@ -7,4 +7,4 @@ The MSLSAM includes components that support the Embedded Script job action. This
   - The MSLSAM automatically generates a filename for a script when it receives the job from OpCon.
 - $ARGUMENTS placeholder tells the MSLSAM where to place the arguments when constructing the command to send to the operating system.
 
-For information on creating Embedded Script jobs in the Enterprise Manager, refer to [Defining Job Action: Embedded Script Job Details](https://help.smatechnologies.com/opcon/core/latest/Files/UI/Enterprise%20Manager/Job%20Type%20Management.htm#Defining_Job_Action:_Command_Script_Job_Details) in the **Enterprise Manager** online help.
+For information on creating Embedded Script jobs in the Enterprise Manager, refer to [Defining Job Action: Embedded Script Job Details](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Job-Type-Management/#defining-job-action-embedded-script-job-details-1) in the **Enterprise Manager** online help.

@@ -3,7 +3,7 @@
 The MSLSAM and its supporting components write several log files to record information. The logs reside in the <Output Directory\>\\MSLSAM\\Log\\ directory.
 
 :::note
-The Output Directory was configured during the installation. For more information, refer to [File Locations](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/File%20Locations.htm) in the **Concepts** online help.
+The Output Directory was configured during the installation. For more information, refer to [File Locations](https://help.smatechnologies.com/opcon/core/file-locations) in the **Concepts** online help.
 :::
 
 The log files include:

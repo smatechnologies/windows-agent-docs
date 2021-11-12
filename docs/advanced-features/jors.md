@@ -25,7 +25,7 @@ When CaptureJobOutput is set to TRUE, JORS captures the following information fo
 The LSAM creates one log file for each job with all the above information pertinent to that job. The job log file is created under the JobOutput folder when job is running and eventually saved under the <Output Directory\>\\MSLSAM\\JobOutput\\Archives\\<Job schedule Date\> folder when job completes.
 
 :::note
-The Output Directory was configured during the installation. For more information, refer to [File Locations](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/File%20Locations.htm) in the **Concepts** online help.
+The Output Directory was configured during the installation. For more information, refer to [File Locations](https://help.smatechnologies.com/opcon/core/file-locations) in the **Concepts** online help.
 :::
 
 The archived JobOutput folders also get cleaned up based on ArchiveDaysToKeep setting configured under Debug Options. Any output logs older than ArchiveDaysToKeep get cleaned up at midnight.

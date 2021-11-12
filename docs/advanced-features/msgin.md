@@ -3,7 +3,7 @@
 MSGIN is the name of the directory the MSLSAM monitors for external events. The location of the MSGIN directory is <Configuration Directory\>\\MSLSAM\\MSGIN\\ on the machine where the MSLSAM is installed. Any external program or application can generate and place an ASCII file in this directory. These ASCII files must contain a valid OpCon event(s), User Login ID, and event password for the SAM to process the event(s).
 
 :::note
-The Configuration Directory is based on where you installed your programs. For more information, refer to [File Locations](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/File%20Locations.htm) in the **Concepts** online help.
+The Configuration Directory is based on where you installed your programs. For more information, refer to [File Locations](https://help.smatechnologies.com/opcon/core/file-locations) in the **Concepts** online help.
 :::
 
 The MSLSAM watches the MSGIN directory for any text file. The MSLSAM reads the file, passes the text to the SAM for processing, and finally the MSLSAM deletes the file. If the SAM receives an invalid event, the SAM documents the error in the SAM Critical.log file.
@@ -19,7 +19,7 @@ The following describes an example of using the MSGIN directory.
     **\$JOB:RELEASE,\[\[\$DATE\]\],ProdSched,ProdJob,BatchUser,EventPassword**
    ```
 
-3. Place an OpCon User Login ID and an external event password on the end of the event. This password is not the same as the database password used to log in to the Enterprise Manager. For more information, refer to [External Events](https://help.smatechnologies.com/opcon/core/latest/Files/OpCon%20Events/Defining%20Events.htm#External) in the **OpCon Events** online help.
+3. Place an OpCon User Login ID and an external event password on the end of the event. This password is not the same as the database password used to log in to the Enterprise Manager. For more information, refer to [External Events](https://help.smatechnologies.com/opcon/core/events/defining#external-events) in the **OpCon Events** online help.
 4. The user must have the correct function privileges in OpCon for the SAM to perform the command contained in the external event.
 5. The only allowable tokens in an external event are $DATE, $TIME, and $NOW. These tokens pull values from the current system date and time.
 6. If multiple events are desired, enter a carriage return and enter another event on the next line.

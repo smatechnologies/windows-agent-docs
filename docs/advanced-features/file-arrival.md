@@ -9,4 +9,4 @@ The MSLSAM includes components that support the File Arrival job type. The SMAFi
 - Using tokens for the time frame and stable time.
 - Defining advanced failure criteria.
 
-For information on creating File Arrival jobs in the Enterprise Manager, refer to [Defining Job Action: File Arrival Job Details](https://help.smatechnologies.com/opcon/core/latest/Files/UI/Enterprise%20Manager/Job%20Type%20Management.htm#Defining_File_Arrival_Job_Details) in the **Enterprise Manager** online help.
+For information on creating File Arrival jobs in the Enterprise Manager, refer to [Defining Job Action: File Arrival Job Details](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Job-Type-Management/#defining-job-action-file-arrival-job-details-1) in the **Enterprise Manager** online help.

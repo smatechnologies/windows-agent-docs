@@ -19,7 +19,7 @@ The following describes how to enable file transfer for the MSLSAM.
 2. Configure the **SmaftServerSocket** parameter in the SMAFT Settings section of the MSLSAM.ini file (for information, refer to [SMAFT settings](../administration/configuration#smaft-settings)).
 3. Make sure the **SMA Windows LSAM**, and **SMA Microsoft JORS** services are running. For more information, refer to [Start the LSAM](../administration/manage-lsam#start-the-lsam).
 4. In the Enterprise Manager, configure the settings for the machine to match the MSLSAM.ini file.
-   - For procedures, refer to [Configuring Advanced Machine Parameters and Properties](https://help.smatechnologies.com/opcon/core/latest/Files/UI/Enterprise%20Manager/Configuring%20Advanced%20Machine%20Properties.htm) in the **Enterprise Manager** online help.
-   - For details on the settings to change, refer to the [Advanced Machine Configuration](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/Machines.htm#Advanced) section in the **Concepts** online help:
-     - **JORS Port Number** under the [Communication Settings](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/Machines.htm#Communic).
-     - All settings under the [File Transfer Settings](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/Machines.htm#File).
+   - For procedures, refer to [Configuring Advanced Machine Parameters and Properties](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Configuring-Advanced-Machine-Properties) in the **Enterprise Manager** online help.
+   - For details on the settings to change, refer to the [Advanced Machine Configuration](https://help.smatechnologies.com/opcon/core/objects/machines#advanced-machine-configuration) section in the **Concepts** online help:
+     - **JORS Port Number** under the [Communication Settings](https://help.smatechnologies.com/opcon/core/objects/machines#communication-settings).
+     - All settings under the [File Transfer Settings](https://help.smatechnologies.com/opcon/core/objects/machines#file-transfer-settings).

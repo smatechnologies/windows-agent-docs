@@ -4,7 +4,7 @@ sidebar_label: 'Machine messages'
 
 # Windows LSAM machine messages
 
-The following is a list of MSLSAM exit conditions for failed jobs. If an exit condition is not in this list, it is a Windows exit code. For information on Windows Errors, refer to [Windows System Errors](https://help.smatechnologies.com/opcon/core/latest/Files/Concepts/Windows%20System%20Errors.htm) in the **Concepts** online help. Within the Enterprise Manager, the LSAM Messages are available in Operation \> Job Information \> Configuration ("LSAM Feedback" Category).
+The following is a list of MSLSAM exit conditions for failed jobs. If an exit condition is not in this list, it is a Windows exit code. For information on Windows Errors, refer to [Windows System Errors](https://help.smatechnologies.com/opcon/core/reference/Windows-System-Errors) in the **Concepts** online help. Within the Enterprise Manager, the LSAM Messages are available in Operation \> Job Information \> Configuration ("LSAM Feedback" Category).
 
 |MSLSAM Exit Condition Number|Description|
 |--- |--- |
