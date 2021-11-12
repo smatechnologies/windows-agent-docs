@@ -4,6 +4,12 @@ sidebar_label: "Release notes"
 
 # Windows LSAM release notes
 
+## Windows Agent 20.2.0
+
+:white_check_mark: **WIN-608**: Fixed an issue in the Windows agent where a Windows update (KB5001879) on Windows Server 2019 caused the agent to not start up correctly.
+
+:white_check_mark: **WIN-607**: Fixed an issue in the Windows Agent where a post process would not accept any arguments passed to it. Now, if the post process defined in the config has arguments, you may specify them after enclosing the full post process path in double quotes, followed by the list of arguments.
+
 ## Windows Agent 20.1.0
 
 2021 April
