@@ -4,6 +4,16 @@ sidebar_label: "Release notes"
 
 # Windows LSAM release notes
 
+## Windows Agent 20.3.0
+
+:white_check_mark: **WIN-612**: Fixed an issue where advanced failure criteria submitted with a missing sequence number results in a null reference exception when trying to evaluate exit condition.
+
+:white_check_mark: **WIN-604**: Fixed an issue where resource monitor looped with a null reference error in event log after reboots.
+
+:white_check_mark: **WIN-615**: Fixed an issue in file receive in SMAFT that failed with "This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms" in the SMAFT log. 
+
+:white_check_mark: **WIN-616**: Fixed an issue in SMAFT where non-binary transfers with record separators corrupted the file transfer.
+
 ## Windows Agent 20.2.0
 
 :white_check_mark: **WIN-608**: Fixed an issue in the Windows agent where a Windows update (KB5001879) on Windows Server 2019 caused the agent to not start up correctly.
