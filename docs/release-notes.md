@@ -4,6 +4,12 @@ sidebar_label: "Release notes"
 
 # Windows LSAM release notes
 
+## Windows Agent 20.4.0
+
+:white_check_mark: **WIN-613**: Fixed an issue for FileWatcher to resume processing start and end offsets based on schedule date value after a machine restart.
+
+:white_check_mark: **WIN-619**: Fixed an issue in Windows agent upgrades to prevent a collision of app ids during installation and throwing an error.
+
 ## Windows Agent 20.3.0
 
 :white_check_mark: **WIN-612**: Fixed an issue where advanced failure criteria submitted with a missing sequence number results in a null reference exception when trying to evaluate exit condition.
