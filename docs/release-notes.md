@@ -4,13 +4,23 @@ sidebar_label: "Release notes"
 
 # Windows LSAM release notes
 
+## Windows Agent 25.0.0
+
+2026 February
+
+:eight_spoked_asterisk: **OCAG-292**: The target .NET framework for Windows Agent, JORS, and SMAFT has been updated to .NET Framework 4.8 and TLS 1.3 support has been added across these components.
+
 ## Windows Agent 20.4.0
+
+2023 March
 
 :white_check_mark: **WIN-613**: Fixed an issue for FileWatcher to resume processing start and end offsets based on schedule date value after a machine restart.
 
 :white_check_mark: **WIN-619**: Fixed an issue in Windows agent upgrades to prevent a collision of app ids during installation and throwing an error.
 
 ## Windows Agent 20.3.0
+
+2022 October
 
 :white_check_mark: **WIN-612**: Fixed an issue where advanced failure criteria submitted with a missing sequence number results in a null reference exception when trying to evaluate exit condition.
 
