@@ -4,6 +4,14 @@ sidebar_label: "Release notes"
 
 # Windows LSAM release notes
 
+## Windows Agent 25.1.0
+
+2026 April
+
+:eight_spoked_asterisk: **OCAG-160**: FileWatcher job now finishes with an error when the monitored network path goes offline and the monitoring window expires.
+
+:eight_spoked_asterisk: **OCAG-669**: Removed the redundant RemoveJobTracking call where the job is not found in internal tables.Eliminates a 1-second-per-message delay when processing TX2 messages for jobs not found in the agent's internal tables, improving throughput in high job volume environments where such messages are frequent.
+
 ## Windows Agent 25.0.0
 
 2026 February
