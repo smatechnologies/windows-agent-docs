@@ -5,7 +5,7 @@ module.exports = {
     {
       type: 'category', 
       label: 'Installation',
-      collapsed: false,
+      collapsed: true,
       items: [
         'installation/media',
         'installation/install',
@@ -17,7 +17,7 @@ module.exports = {
     {
       type: 'category', 
       label: 'Administration',
-      collapsed: false,
+      collapsed: true,
       items: [
         'administration/tls',
         'administration/service-configuration',
@@ -32,7 +32,7 @@ module.exports = {
     {
       type: 'category', 
       label: 'Advanced features',
-      collapsed: false,
+      collapsed: true,
       items: [
         'advanced-features/embedded-scripts',
         'advanced-features/ecof',
@@ -51,7 +51,7 @@ module.exports = {
     {
       type: 'category', 
       label: 'Reference',
-      collapsed: false,
+      collapsed: true,
       items: [
         'reference/machine-messages',
         'reference/environment-variables',
