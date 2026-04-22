@@ -1,6 +1,6 @@
 # Writer-Friendly Documentation Standard
 
-> **Purpose:** This file defines the primary page template used to evaluate documentation completeness and structure. Every feature page submitted for review is scored against these 11 active sections (0–1, 4–12). Sections 2 and 3 are deprecated — their content is now part of Section 1.
+> **Purpose:** This file defines the primary page template used to evaluate documentation completeness and structure. Every feature page submitted for review is scored against these 13 sections (0–12).
 >
 > **Used by:** `doc-quality-assessor` — Template Adherence Review (Step 3) and Completeness subscore.
 
