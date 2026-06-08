@@ -62,11 +62,27 @@ module.exports = {
       label: 'Utilities',
       collapsed: true,
       items: [
-        'utilities/chronoman',
         'utilities/smacheckfilesecurity',
-        'utilities/smadirectory',
-        'utilities/smaevaluateexpression',
-        'utilities/smaholiday',
+        {
+          type: 'link',
+          label: 'Chronoman',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/Chronoman',
+        },
+        {
+          type: 'link',
+          label: 'SMADirectory',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMADirectory',
+        },
+        {
+          type: 'link',
+          label: 'SMA Evaluate Expression',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMA-Evaluate-Expression',
+        },
+        {
+          type: 'link',
+          label: 'SMAHoliday',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMAHoliday',
+        },
       ],
     },
   ],

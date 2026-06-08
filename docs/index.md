@@ -99,11 +99,11 @@ The Windows Agent is an OpCon agent that allows OpCon to schedule and execute Wi
 
 ### Utilities
 
-- [Chronoman](./utilities/chronoman.md)
 - [SMACheckFileSecurity](./utilities/smacheckfilesecurity.md)
-- [SMADirectory](./utilities/smadirectory.md)
-- [SMAEvaluateExpression](./utilities/smaevaluateexpression.md)
-- [SMAHoliday](./utilities/smaholiday.md)
+- [Chronoman](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/Chronoman)
+- [SMADirectory](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMADirectory)
+- [SMA Evaluate Expression](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMA-Evaluate-Expression)
+- [SMAHoliday](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMAHoliday)
 
 </div>
 
