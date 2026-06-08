@@ -116,7 +116,7 @@ It compares the file's timestamp (controlled by `-F`) against the current time m
 Yes. Files without an extension are matched when no extension filter is specified or when the extension filter includes all files (`*`).
 
 **What files does SMADirectory always exclude?**  
-SMADirectory always excludes its own executable and several support files: `SMADirectory.exe`, `ecofile.txt`, `OpCon.CommandLine.dll`, `SMACommon.ini`, `SMAEcof.dll`, `SMACommon.dll`, and `OpCon.CommandLine.xml`. The `SMADirectory` folder itself is also excluded.
+SMADirectory always excludes its own executable, its supporting component files, `ecofile.txt`, and `SMACommon.ini`. The `SMADirectory` folder itself is also excluded.
 
 **Can I filter by multiple extensions?**  
 Yes. Separate extensions with a pipe character in the `-e` value. For example: `-e "*.log|*.txt|*.bak"`.

@@ -51,7 +51,7 @@ Configure the job's failure criteria in OpCon to treat exit code `-1` as a failu
 Yes. Use `@` in place of `[` and `]` around the property name so the shell does not interpret the brackets. For example, `@@MYTOKEN@@` is interpreted as `[[MYTOKEN]]` by SMAEvaluateExpression. OpCon resolves the token before the job is submitted to the agent.
 
 **What expression syntax is supported?**  
-SMAEvaluateExpression uses the SmaExpressionEvaluator library to parse and evaluate expressions. Refer to SMA Technologies documentation for the supported expression syntax and operators.
+Refer to SMA Technologies documentation for the supported expression syntax and operators.
 
 ## Glossary
 

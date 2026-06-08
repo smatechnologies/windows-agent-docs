@@ -66,4 +66,4 @@ Yes, as long as the agent machine has access to the network path and the service
 
 **File existence check** — A test that confirms whether a file at a specified path is present on the file system, without reading or validating its contents.
 
-**Source data type** — An optional value passed after the `||` delimiter in the argument. Currently parsed by SMACheckFileSecurity but not used in the existence check.
+**Source data type** — An optional value passed after the `||` delimiter in the argument. It does not affect the file existence check.
