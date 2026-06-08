@@ -49,13 +49,41 @@ module.exports = {
       ], 
     },
     {
-      type: 'category', 
+      type: 'category',
       label: 'Reference',
       collapsed: true,
       items: [
         'reference/machine-messages',
         'reference/environment-variables',
-      ], 
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Utilities',
+      collapsed: true,
+      items: [
+        'utilities/smacheckfilesecurity',
+        {
+          type: 'link',
+          label: 'Chronoman',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/Chronoman',
+        },
+        {
+          type: 'link',
+          label: 'SMADirectory',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMADirectory',
+        },
+        {
+          type: 'link',
+          label: 'SMA Evaluate Expression',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMA-Evaluate-Expression',
+        },
+        {
+          type: 'link',
+          label: 'SMAHoliday',
+          href: 'https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMAHoliday',
+        },
+      ],
     },
   ],
 };

@@ -1,6 +1,13 @@
 ---
 slug: '/'
 sidebar_label: 'Windows Agent'
+title: Windows Agent
+description: "OpCon agent that allows OpCon to schedule and run Windows jobs. Covers installation, configuration, advanced features, utilities, and reference."
+tags:
+  - Conceptual
+  - System Administrator
+  - Automation Engineer
+  - Agents
 hide_table_of_contents: true
 displayed_sidebar: null
 ---
@@ -85,6 +92,18 @@ The Windows Agent is an OpCon agent that allows OpCon to schedule and execute Wi
 
 - [Machine messages](./reference/machine-messages.md)
 - [Environment variables](./reference/environment-variables.md)
+
+</div>
+
+<div style={{background: 'var(--ifm-card-background-color)', border: '1px solid var(--ifm-color-emphasis-400)', borderRadius: '10px', padding: '0.75rem 1rem'}}>
+
+### Utilities
+
+- [SMACheckFileSecurity](./utilities/smacheckfilesecurity.md)
+- [Chronoman](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/Chronoman)
+- [SMADirectory](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMADirectory)
+- [SMA Evaluate Expression](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMA-Evaluate-Expression)
+- [SMAHoliday](https://help.smatechnologies.com/opcon/core/utilities/Command-line-Utilities/SMAHoliday)
 
 </div>
 

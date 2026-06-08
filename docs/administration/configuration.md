@@ -96,6 +96,7 @@ Enter all alphabetic TCP/IP parameter values in uppercase. The agent service doe
 | AllowedIPAddress_2 | Blank | Y | N | Same as AllowedIPAddress_1. |
 | AllowedIPAddress_3 | Blank | Y | N | Same as AllowedIPAddress_1. |
 | AllowedIPAddress_4 | Blank | Y | N | Same as AllowedIPAddress_1. |
+| AllowedIPAddress_5 | Blank | Y | N | Same as AllowedIPAddress_1. |
 | CheckCRC | TRUE | Y | N | Indicates if a CRC validation should be performed on messages sent between the agent and SMANetCom. If `TRUE`, all messages are validated and error messages are written if a CRC check fails. If `FALSE`, messages are not validated. |
 | InboundBufferCount | 250 | Y | N | Sets the number of inbound TCP/IP buffers for this connection. The typical size of one TCP/IP buffer is 8192 bytes. A change to this parameter only takes effect when the socket is reopened. |
 
@@ -112,6 +113,7 @@ Enter all process creation parameter values in uppercase. The agent service cann
 | WindowState | HIDE | Y | N | Determines how Windows Agent jobs interact with the desktop. If `HIDE`, jobs run in the background and are not visible on the logged-on desktop. If `SHOW`, jobs appear on the currently logged-on desktop. If `INTERACTIVEHIDE`, jobs run in the background but Windows treats them as interactive. If `MINIMIZE`, jobs appear on the Task Bar of the currently logged-on desktop. This parameter is case-sensitive. `SHOW` and `MINIMIZE` are typically used for debugging. For more information, refer to [WindowState behavior](window-state). |
 | FailJobWithMissingECOF | FALSE | Y | N | Decides the agent's response when the E.C.O.F. is missing. This setting only applies to the E.C.O.F. in the job definition (not to the DefaultECOFDirectory). If `TRUE` and the E.C.O.F. is not present, the agent marks the job as Failed. If `FALSE` and the E.C.O.F. is not present, the agent compares the Failure Criteria with the job's standard termination status. This parameter is case-sensitive. For more information on the E.C.O.F., refer to [Exit Code Override File (E.C.O.F.)](../advanced-features/ecof). |
 | CaptureJobOutput | TRUE | Y | N | Enables or disables the creation of job output files for each OpCon job. If `TRUE`, the agent saves the output from each started job in a subdirectory called `JobOutput`. The View Job Output feature only works if this setting is `TRUE`. |
+| UseDisconnectedSession | FALSE | Y | N | When `TRUE`, the agent can start interactive jobs in a Windows user session that is in a disconnected state (the user is logged on but not actively connected to the machine). When `FALSE`, the agent starts interactive jobs only in an active user session. This parameter is case-sensitive. |
 
 ## Debug options
 
@@ -152,7 +154,7 @@ For a File Transfer job to function properly, ensure that any firewall on the Wi
 |---|---|---|---|---|
 | TlsSmaftServerSocket | 0 | N | Y | Defines the TLS socket number through which all SMA File Transfer communication occurs. This number must match the TLS File Transfer Port Number defined in Advanced Machine Settings under File Transfer Settings. A zero value indicates TLS File Transfers are disabled from this server. If there are multiple agent instances installed on one machine, each instance's FT Server Service must have a unique port. For an up-to-date list of unused ports, refer to the Internet Assigned Numbers Authority at www.iana.org. |
 | SmaftServerSocket | 3110 | N | Y | Defines the non-TLS socket number through which all SMA File Transfer communication occurs. This number must match the non-TLS File Transfer Port Number defined in Advanced Machine Settings under File Transfer Settings. A zero value indicates non-TLS File Transfers are disabled from this server. For an up-to-date list of unused ports, refer to the Internet Assigned Numbers Authority at www.iana.org. |
-| TemporaryFolderName | OpConTemp | N | Y | Defines the folder name inside which SMAFT components create the temporary file while handling a file transfer. The folder is created in the root of the logical drive matching the destination file. SMA Technologies does not recommend changing this value. If recommended by SMA Technologies Support, add this setting to the MSLSAM.ini file. |
+| TemporaryFolderName | OpconTemp | N | Y | Defines the folder name inside which SMAFT components create the temporary file while handling a file transfer. The folder is created in the root of the logical drive matching the destination file. SMA Technologies does not recommend changing this value. If recommended by SMA Technologies Support, add this setting to the MSLSAM.ini file. |
 | PacketSize | 65536 | N | Y | Sets the packet size for the file data packet exchanged between FTServer and FTAgent. Minimum value: 65536. Maximum value: 999999. |
 | MaskGTBandwidth | FALSE | N | N | When set to `TRUE`, masks the `>` symbol in the SMA File Transfer job bandwidth value from being sent to the SMAFT Server. Valid values: `TRUE` or `FALSE`. |
 | ZipSupport | YES | N | N | Specifies if JORS has zip (WinZip) capability for file compression. Valid values: `NO` or `YES`. |
@@ -187,23 +189,23 @@ The tables provide settings to customize logging in the Application Log of the W
 
 | [Job Prerun Failed] | Default | Dynamic | Required | Description |
 |---|---|---|---|---|
-| Msg | NULL | Y | N | Defines the log message indicating the agent-submitted prerun job has failed. Set to `NULL` to disable. `$JOBNAME` is a supported token for this message type. |
-| Type | 4 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
+| Msg | [$JOBNAME] prerun failed. | Y | N | Defines the log message indicating the agent-submitted prerun job has failed. Set to `NULL` to disable. `$JOBNAME` is a supported token for this message type. |
+| Type | 1 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
 
 | [Job Initialization Error] | Default | Dynamic | Required | Description |
 |---|---|---|---|---|
-| Msg | NULL | Y | N | Defines the log message indicating the agent-submitted job has had an initialization error. Set to `NULL` to disable. `$JOBNAME` is a supported token for this message type. |
-| Type | 4 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
+| Msg | [$JOBNAME] initialization error. | Y | N | Defines the log message indicating the agent-submitted job has had an initialization error. Set to `NULL` to disable. `$JOBNAME` is a supported token for this message type. |
+| Type | 1 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
 
 | [Job Errored] | Default | Dynamic | Required | Description |
 |---|---|---|---|---|
-| Msg | NULL | Y | N | Defines the log message indicating the agent-submitted job has failed. Set to `NULL` to disable. `$JOBNAME` is a supported token for this message type. |
-| Type | 4 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
+| Msg | [$JOBNAME] errored. | Y | N | Defines the log message indicating the agent-submitted job has failed. Set to `NULL` to disable. `$JOBNAME` is a supported token for this message type. |
+| Type | 1 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
 
 | [No Access To ECOF Directory] | Default | Dynamic | Required | Description |
 |---|---|---|---|---|
 | Msg | The DefaultECOFDirectory is not valid or this service lacks read/write access to it. | Y | N | Defines the log message indicating an invalid E.C.O.F. directory. Set to `NULL` to disable. |
-| Type | 4 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
+| Type | 1 | Y | N | Defines the message type: `1` = Error, `2` = Warning, `4` = Information. |
 
 ## Exception handling
 

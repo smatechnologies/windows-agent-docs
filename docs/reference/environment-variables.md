@@ -39,10 +39,12 @@ The Windows Agent defines several environment variables for each job it starts. 
 | `SMA_MSLSAM_PRERUN_ACTIVE` | A value of `TRUE` or `FALSE` indicating whether the currently running job process is a prerun job or a main job. |
 | `SMA_MSLSAM_RESTART_STEP` | The optional restart step sent to the agent for the job in the `SMA_MSLSAM_JOB_NAME` variable. |
 | `SMA_MSLSAM_ROOT_DIRECTORY` | The path to the directory where the agent is installed. |
-| `SMA_MSLSAM_SAM_JOB_ID` | A 27-character unique job ID comprising a 12-character job name, 5 spaces, and a 10-digit job number. |
+| `SMA_MSLSAM_SAM_JOB_ID` | A 27-character unique job ID that identifies this job in the agent's tracking system. |
 | `SMA_MSLSAM_SCHEDULE_DATE` | The date of the schedule containing the job in the `SMA_MSLSAM_JOB_NAME` variable. |
 | `SMA_MSLSAM_SCHEDULE_FREQ` | The schedule frequency of the job in the `SMA_MSLSAM_JOB_NAME` variable. |
 | `SMA_MSLSAM_SCHEDULE_NAME` | The name of the schedule containing the job in the `SMA_MSLSAM_JOB_NAME` variable. |
+| `SMA_MSLSAM_DATA_DIRECTORY` | The path to the agent's data directory, where configuration and data files such as MSLSAM.ini are stored. Distinct from the installation directory provided by `SMA_MSLSAM_ROOT_DIRECTORY`. |
+| `SMA_MSLSAM_ECOF_DIRECTORY` | The directory the agent monitors for [Exit Code Override Files (E.C.O.F.)](../advanced-features/ecof). Corresponds to the `DefaultECOFDirectory` setting in MSLSAM.ini. |
 
 ## FAQs
 

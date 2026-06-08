@@ -48,7 +48,7 @@ If `CaptureJobStatistics` is set to `TRUE`, the agent captures the performance d
 - I/O Write Bytes/Sec
 - I/O Write Operations/Sec
 
-The captured information is available in Daily Job Operations and History under the **LSAM Feedback** category.
+The captured information is available in [Daily Job Operations](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Daily-Job-Summary) and History under the **LSAM Feedback** category.
 
 ## Configuration options
 
@@ -57,6 +57,17 @@ The following MSLSAM.ini setting enables job statistics capture. For the complet
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|
 | `CaptureJobStatistics` | Enables or disables collection of CPU, memory, and I/O performance counters for each job. When `TRUE`, data is available in the LSAM Feedback category in Daily Job Operations and History. | `FALSE` | Dynamic — no service restart needed. |
+
+## FAQs
+
+**Does enabling CaptureJobStatistics affect job performance?**  
+The agent uses Windows performance counter APIs to collect statistics while a job runs. For most workloads the overhead is negligible, but on machines running a very high number of concurrent short-duration jobs, you may observe increased CPU usage on the agent process. Disable CaptureJobStatistics if performance impact is observed.
+
+**How long is statistics data retained?**  
+Statistics are stored in the OpCon database as part of job history. Retention follows the job history purge settings configured in OpCon.
+
+**Can I view statistics for jobs that failed?**  
+Yes. Statistics are captured and stored for each job that the agent starts regardless of the job's exit status.
 
 ## Glossary
 

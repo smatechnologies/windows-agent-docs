@@ -43,6 +43,8 @@ Windows Agent machine messages are exit condition codes in the 31000 series retu
 
 **File Arrival job fails with exit code 2** — The monitored directory path was not found. The directory does not exist or the agent lacks access to it. Verify that the path in the job definition exists and that the agent service account has read permissions on that directory.
 
+**File Arrival job fails with exit code 4** — The network path to the monitored directory is disconnected. Verify that the network share is accessible from the agent machine and that the service account has sufficient rights to reach it.
+
 ## FAQs
 
 **Is exit code 31000 an error?**  
@@ -72,7 +74,7 @@ The following is a list of Windows Agent exit conditions for failed jobs. If an 
 | 31008 | The agent was unable to obtain the rights for the user submitted with the job. |
 | 31009 | The agent was unable to grant the user rights to the process. |
 | 31010 | The agent was unable to log on as the user submitted with the job. |
-| 31011 | The agent was unable to load the environment for the user submitted with the job. |
+| 31011 | The agent was unable to create an environment block for the user submitted with the job. |
 | 31012 | The agent was unable to load the Windows profile for the user submitted with the job. |
 | 31013 | The agent was unable to unload the Windows profile for the user submitted with the job. |
 | 31014 | The agent was unable to find the E.C.O.F. specified. |
@@ -87,3 +89,4 @@ The following is a list of Windows Agent exit codes specifically for File Arriva
 | 1 | The file is not found. Reasons include an invalid file name, the file has not arrived yet, or permissions. |
 | 2 | The path is not found. Reasons include an invalid path or permissions. |
 | 3 | A file is found but the creation date is out of range. |
+| 4 | The network path to the monitored directory is disconnected. |
