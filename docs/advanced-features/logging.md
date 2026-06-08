@@ -68,6 +68,17 @@ The following MSLSAM.ini settings control log file behavior. For complete settin
 | `TraceLevel` | Logging detail level. `0` = standard logging; `1` = more detailed logging written to MSLSAM.log. | `0` | Dynamic — no service restart needed. |
 | `TraceSAMMessages` | When `ON`, traces SMANetCom communication messages to MSLSAMTrace.log. Useful for diagnosing communication issues. | `ON` | Dynamic — no service restart needed. Case-sensitive. |
 
+## FAQs
+
+**How do I enable trace logging without restarting the agent service?**  
+The `TraceLevel` and `TraceSAMMessages` settings are dynamic — the agent re-reads MSLSAM.ini automatically when the file changes. Update the settings in MSLSAM.ini, save the file, and the agent activates the new trace level without a service restart.
+
+**What is the difference between MSLSAM.log and MSLSAMTrace.log?**  
+MSLSAM.log contains standard agent processing information, configuration readings, and status messages. MSLSAMTrace.log captures SMANetCom communication messages between the agent and the OpCon server. MSLSAMTrace.log is only written when `TraceSAMMessages` is set to `ON`.
+
+**How do I retain more than 10 days of archived logs?**  
+Increase the `ArchiveDaysToKeep` value in the `[Debug Options]` section of MSLSAM.ini. The setting is dynamic — no service restart is required. See [Debug options](../administration/configuration#debug-options) for the full setting description.
+
 ## Glossary
 
 **MSLSAMTrace.log** — A log file written when trace logging is enabled. Captures detailed SMANetCom messages useful for diagnosing communication issues between the agent and OpCon.

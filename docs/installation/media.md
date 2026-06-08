@@ -37,3 +37,13 @@ In the documentation for running the setup program, replace **\<media\>** with t
 
 **Can I run the installer directly from a USB drive or a network share?**  
 SMA Technologies recommends copying installation files to a local hard drive folder before running setup when using USB or FTP delivery. Running from removable media or a network share can cause failures due to media read interruptions. DVD-ROM and ISO can be run directly from the media or mount point.
+
+## Glossary
+
+**ISO image** — A single-file archive of an optical disc. Mount the ISO image as a virtual drive to access the installation files.
+
+**USB drive** — A portable flash storage device used to physically deliver installation files to a target machine. Copy the files to the local hard drive before running setup.
+
+**FTP** — File Transfer Protocol. A method of downloading installation files over a network. Download files to the local hard drive before running setup.
+
+**DVD-ROM** — A read-only optical disc. Insert the DVD into the drive and run the installation from the disc or copy files to the local hard drive first.

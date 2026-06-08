@@ -44,7 +44,7 @@ The following MSLSAM.ini settings configure StartAllProcessWrapper behavior. For
 ## FAQs
 
 **Does the wrapper replace the job's command line, or does it run alongside it?**  
-The wrapper acts as a proxy — the agent calls the wrapper and passes the original job command line as an argument. The wrapper is responsible for executing the actual job and must capture and send the job's termination value back to OpCon (for example, through an E.C.O.F.).
+The wrapper acts as a proxy — the agent calls the wrapper and passes the original job command line as an argument. The wrapper is responsible for executing the actual job and must capture and send the job's termination value back to OpCon (for example, through an [E.C.O.F.](../advanced-features/ecof)).
 
 **Can the wrapper be used for prerun jobs as well?**  
 By default, the wrapper applies only to main jobs. Set `UseWrapperForPreruns` to `TRUE` in MSLSAM.ini to also apply the wrapper to prerun jobs.

@@ -49,13 +49,25 @@ module.exports = {
       ], 
     },
     {
-      type: 'category', 
+      type: 'category',
       label: 'Reference',
       collapsed: true,
       items: [
         'reference/machine-messages',
         'reference/environment-variables',
-      ], 
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Utilities',
+      collapsed: true,
+      items: [
+        'utilities/chronoman',
+        'utilities/smacheckfilesecurity',
+        'utilities/smadirectory',
+        'utilities/smaevaluateexpression',
+        'utilities/smaholiday',
+      ],
     },
   ],
 };

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pwsh -NoProfile -Command \"$raw = [Console]::In.ReadToEnd(); try { $j = $raw | ConvertFrom-Json; $f = $j.tool_input.file_path } catch { exit 0 }; if (-not $f -or $f -notmatch 'docs[\\\\/].*\\.md$') { exit 0 }; $banned = @{ 'execute|executed|executing|executes' = 'Use \\'run\\' or \\'start\\' instead'; 'right-select' = 'Use \\'select\\' instead'; 'navigate to' = 'Use \\'open\\' or describe the destination instead'; '\\\\blaunch\\\\b' = 'Use \\'open\\' or \\'start\\' instead'; '\\\\bcheckbox\\\\b' = 'Use \\'option\\' instead'; 'drop-down' = 'Use \\'list\\' instead'; '\\\\bclick\\\\b' = 'Use \\'select\\' instead' }; $found = $false; foreach ($pattern in $banned.Keys) { $hits = Select-String -Path $f -Pattern $pattern -CaseSensitive:$false -ErrorAction SilentlyContinue; if ($hits) { if (-not $found) { Write-Host \\\"TERMINOLOGY: $f\\\"; $found = $true }; foreach ($h in $hits) { Write-Host \\\"  Line $($h.LineNumber): [$pattern] — $($banned[$pattern])\\\" } } }\""
+          }
+        ]
+      }
+    ]
+  }
+}
