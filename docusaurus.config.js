@@ -6,6 +6,9 @@ module.exports = {
   baseUrl: '/opcon/agents/windows/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    format: "md",
+  },
   favicon: 'img/favicon.ico',
   organizationName: 'smatechnologies',
   projectName: 'windows-agent-docs',
