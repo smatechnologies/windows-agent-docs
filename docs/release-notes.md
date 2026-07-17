@@ -12,6 +12,16 @@ tags:
 
 ## 25
 
+### 25.2.0
+
+2026 JULY
+
+### What's new
+
+:eight_spoked_asterisk: **OCAG-676**: Improved Windows Agent’s multi threading resilience for concurrently creating processes for different jobs.
+
+:eight_spoked_asterisk: **OCAG-1090**: Reworked unc path mapping in Windows Agent for better multi threading resilience.
+
 ### 25.1.0
 
 2026 April
