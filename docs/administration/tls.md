@@ -16,7 +16,7 @@ tags:
 
 ## What is it?
 
-The Windows Agent supports TLS 1.2 for encrypted communication with the OpCon server. A digital certificate must be installed on the agent machine and the certificate serial number must be configured in MSLSAM.ini before TLS can be enabled.
+The Windows Agent supports TLS 1.2 and TLS 1.3 for encrypted communication with the OpCon server. A digital certificate must be installed on the agent machine and the certificate serial number must be configured in MSLSAM.ini before TLS can be enabled.
 
 * Install a certificate from a trusted Certificate Authority or use a self-signed certificate
 * Configure the TLS certificate serial number in MSLSAM.ini to identify the certificate the agent uses
@@ -34,7 +34,7 @@ The Windows Agent supports TLS 1.2 for encrypted communication with the OpCon se
 
 ## Certificate requirements
 
-The Windows Agent supports TLS 1.2 for communication between itself and the OpCon server. The agent and the OpCon server exchange TLS security information before allowing a data communication connection. If there is a problem establishing identity, communication fails immediately.
+The Windows Agent supports TLS 1.2 and TLS 1.3 for communication between itself and the OpCon server. The agent and the OpCon server exchange TLS security information before allowing a data communication connection. If there is a problem establishing identity, communication fails immediately.
 
 To make this possible, a digital certificate must be assigned to the agent. This certificate must be installed in the certificate store of the local Windows machine.
 
@@ -108,7 +108,7 @@ For CA-issued certificates, only the root CA certificate needs to be installed o
 
 ## Glossary
 
-**TLS (Transport Layer Security)** — A cryptographic protocol that encrypts communication between two systems. The Windows Agent uses TLS 1.2 to secure communication with the OpCon server.
+**TLS (Transport Layer Security)** — A cryptographic protocol that encrypts communication between two systems. The Windows Agent uses TLS 1.2 and TLS 1.3 to secure communication with the OpCon server.
 
 **TLSCertificateSerial** — The MSLSAM.ini setting that identifies the certificate the agent uses for TLS communication. Its value is the serial number of the certificate installed in the Windows certificate store on the agent machine.
 
