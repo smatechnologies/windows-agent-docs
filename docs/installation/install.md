@@ -80,7 +80,7 @@ To configure the service startup settings, complete the following steps:
 1. Use menu path: **Start \> Control Panel \> Administrative Tools**.
 2. Select **Administrative Tools**. The **Administrative Tools** window displays.
 3. Select **Services**. The **Services** window displays.
-4. Select the newly installed **SMA OpCon Agent for Microsoft** service. The **SMA OpCon Agent for Microsoft Properties** dialog displays with the **General** tab in focus.
+4. Select the newly installed **SMA OpCon Agent for Microsoft** service. The **SMA OpCon Agent for Microsoft Properties** window displays with the **General** tab in focus.
 5. Select the service startup type:
    - **Automatic (Delayed Start)**
    - **Automatic**

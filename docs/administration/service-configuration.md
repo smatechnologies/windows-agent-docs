@@ -90,7 +90,7 @@ To add advanced Windows privileges for the domain user, complete the following s
 3. Select **Local Security Policy** to open the Local Security Settings editor.
 4. Select **Local Policies** under **Security Settings** and select **User Rights Assignment**.
 5. Select each privilege from the list above and select the **Add User Or Group** button.
-6. In the **Select Users Or Groups** dialog box, select **Locations** and select the machine or domain depending on whether you are adding a local user or a domain user.
+6. In the **Select Users Or Groups** window, select **Locations** and select the machine or domain depending on whether you are adding a local user or a domain user.
 7. In the object name field, enter the name of the user. For adding Local System account, select the current machine and enter `SYSTEM`.
 8. Repeat steps 6 and 7 for each privilege. The privileges are assigned.
 

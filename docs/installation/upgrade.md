@@ -54,7 +54,7 @@ To stop the agent service, complete the following steps:
 
 1. Use menu path: **Start \> Administrative Tools \> Server Manager**. The **Administrative Tools** window displays.
 2. Select **Configuration** to expand it.
-3. Select the **Services** icon. The **Services** window displays.
+3. Select **Services**. The **Services** window displays.
 4. In the **Services** list, select **SMA OpCon Agent for Microsoft**.
 5. Use menu path: **Action \> Stop**.
 6. Confirm the service **Status** is **Stopped**.
@@ -101,7 +101,7 @@ To restart the agent service after upgrade, complete the following steps:
 
 1. Use menu path: **Start \> Administrative Tools \> Server Manager**. The **Administrative Tools** window displays.
 2. Select **Configuration** to expand it.
-3. Select the **Services** icon. The **Services** window displays.
+3. Select **Services**. The **Services** window displays.
 4. In the **Services** list, select **SMA OpCon Agent for Microsoft**.
 5. Use menu path: **Action \> Start**.
 6. Confirm the service **Status** is **Started**.
