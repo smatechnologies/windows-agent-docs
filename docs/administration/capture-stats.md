@@ -52,7 +52,7 @@ The captured information is available in [Daily Job Operations](https://help.sma
 
 ## Configuration options
 
-The following MSLSAM.ini setting enables job statistics capture. For the complete setting description, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini setting enables job statistics capture. For the complete setting description, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|

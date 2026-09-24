@@ -33,7 +33,7 @@ tags:
 
 ## Configuration options
 
-The following MSLSAM.ini settings control JORS behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings control JORS behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|

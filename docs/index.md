@@ -14,7 +14,7 @@ displayed_sidebar: null
 
 # Windows Agent
 
-The Windows Agent is an OpCon agent that allows OpCon to schedule and execute Windows jobs within a Windows environment.
+The Windows Agent is an OpCon agent that allows OpCon to schedule and run Windows jobs within a Windows environment.
 
 <div style={{display: 'flex', gap: '0.75rem', alignItems: 'flex-start', flexWrap: 'wrap', marginTop: '1rem'}}>
 

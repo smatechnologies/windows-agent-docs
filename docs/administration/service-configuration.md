@@ -43,7 +43,7 @@ Selection of the logon type affects the security, network access, and performanc
 
 SMA Technologies recommends running the agent as Local System because it is the only way for the agent to have all of the system-level privileges needed. Access for UNC paths and shared drives must be managed through the user account running the job and through startup scripts defined in the MSLSAM.ini file. In this mode, be sure to select a Windows user account from your network for the Windows User ID in the job definitions.
 
-For information on configuring mapped network drives in the MSLSAM.ini file, refer to [InitializationScript and TerminationScript](scripts). For information on entering a Windows user, refer to [Adding a Batch User for Windows](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Adding-Batch-Users/#setting-up-a-new-microsoft-ms-lsam-batch-user) in the **Enterprise Manager** online help.
+For information on configuring mapped network drives in the MSLSAM.ini file, refer to [InitializationScript and TerminationScript](scripts.md). For information on entering a Windows user, refer to [Adding a Batch User for Windows](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Adding-Batch-Users/#setting-up-a-new-microsoft-ms-lsam-batch-user) in the **Enterprise Manager** online help.
 
 :::tip
 SMA Technologies strongly recommends running as Local System account.

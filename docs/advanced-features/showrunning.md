@@ -15,7 +15,7 @@ tags:
 
 ## What is it?
 
-`ShowRunning.exe` is a command-line utility used to display the Windows process ID (PID) numbers of Windows Agent jobs. ShowRunning reads the agent tracking file and lists the Windows PID number and the command line for each job currently processing. Administrators can use this information to kill any unwanted jobs. For more information on the kill command, refer to [Kill command](kill).
+`ShowRunning.exe` is a command-line utility used to display the Windows process ID (PID) numbers of Windows Agent jobs. ShowRunning reads the agent tracking file and lists the Windows PID number and the command line for each job currently processing. Administrators can use this information to kill any unwanted jobs. For more information on the kill command, refer to [Kill command](kill.md).
 
 * List all running job PIDs and their command lines in one command
 * Identify the PID of a specific job before using the Kill command to terminate it

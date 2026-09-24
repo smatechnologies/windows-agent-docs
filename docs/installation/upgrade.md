@@ -44,7 +44,7 @@ To confirm no jobs are running before upgrading, complete the following steps:
 2. Confirm the number of running jobs is **0** for the Windows machine.
 3. If running jobs exist, contact the OpCon administrator to determine whether to:
    - Wait for the processes to end **— or —**
-   - Kill the processes on the Windows side. For more information, refer to [Kill command](../advanced-features/kill).
+   - Kill the processes on the Windows side. For more information, refer to [Kill command](../advanced-features/kill.md).
 4. Repeat step 3 until the **Machines Status** screen indicates **Running Jobs** of **0/\<max\>**.
 5. Right-click the machine and select **Stop Communication** from the menu.
 

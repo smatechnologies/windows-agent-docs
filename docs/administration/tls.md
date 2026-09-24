@@ -76,7 +76,7 @@ For self-signed certificates, follow steps 1–9 above. Additionally, import the
 
 ## Configuration options
 
-The following MSLSAM.ini settings control TLS behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings control TLS behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|

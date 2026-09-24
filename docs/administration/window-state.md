@@ -33,7 +33,7 @@ The `WindowState` setting in MSLSAM.ini controls whether a job's window appears 
 
 ## Configuration options
 
-The following MSLSAM.ini setting controls window visibility behavior. For the complete setting description, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini setting controls window visibility behavior. For the complete setting description, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|

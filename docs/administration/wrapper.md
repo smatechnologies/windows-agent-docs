@@ -16,7 +16,7 @@ tags:
 
 ## What is it?
 
-The `StartAllProcessWrapper` setting in MSLSAM.ini specifies an executable or script that the agent runs as a proxy for every job it starts. The wrapper receives the job's original command line as an argument, executes any shared pre- or post-processing steps, and then invokes the actual job. Common uses include capturing job start and stop times, environment variables, and stdout and stderr output, all of which are accessible through View Job Output.
+The `StartAllProcessWrapper` setting in MSLSAM.ini specifies an executable or script that the agent runs as a proxy for every job it starts. The wrapper receives the job's original command line as an argument, runs any shared pre- or post-processing steps, and then invokes the actual job. Common uses include capturing job start and stop times, environment variables, and stdout and stderr output, all of which are accessible through View Job Output.
 
 * Apply common pre- or post-processing steps to all jobs on a machine from one configuration point
 * Capture job timing, environment variables, and stdout/stderr uniformly across all jobs
@@ -33,7 +33,7 @@ The `StartAllProcessWrapper` setting in MSLSAM.ini specifies an executable or sc
 
 ## Configuration options
 
-The following MSLSAM.ini settings configure StartAllProcessWrapper behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings configure StartAllProcessWrapper behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|
@@ -44,7 +44,7 @@ The following MSLSAM.ini settings configure StartAllProcessWrapper behavior. For
 ## FAQs
 
 **Does the wrapper replace the job's command line, or does it run alongside it?**  
-The wrapper acts as a proxy — the agent calls the wrapper and passes the original job command line as an argument. The wrapper is responsible for executing the actual job and must capture and send the job's termination value back to OpCon (for example, through an [E.C.O.F.](../advanced-features/ecof)).
+The wrapper acts as a proxy — the agent calls the wrapper and passes the original job command line as an argument. The wrapper is responsible for running the actual job and must capture and send the job's termination value back to OpCon (for example, through an [E.C.O.F.](../advanced-features/ecof.md)).
 
 **Can the wrapper be used for prerun jobs as well?**  
 By default, the wrapper applies only to main jobs. Set `UseWrapperForPreruns` to `TRUE` in MSLSAM.ini to also apply the wrapper to prerun jobs.
