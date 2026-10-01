@@ -43,7 +43,7 @@ Selection of the logon type affects the security, network access, and performanc
 
 SMA Technologies recommends running the agent as Local System because it is the only way for the agent to have all of the system-level privileges needed. Access for UNC paths and shared drives must be managed through the user account running the job and through startup scripts defined in the MSLSAM.ini file. In this mode, be sure to select a Windows user account from your network for the Windows User ID in the job definitions.
 
-For information on configuring mapped network drives in the MSLSAM.ini file, refer to [InitializationScript and TerminationScript](scripts). For information on entering a Windows user, refer to [Adding a Batch User for Windows](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Adding-Batch-Users/#setting-up-a-new-microsoft-ms-lsam-batch-user) in the **Enterprise Manager** online help.
+For information on configuring mapped network drives in the MSLSAM.ini file, refer to [InitializationScript and TerminationScript](scripts.md). For information on entering a Windows user, refer to [Adding a Batch User for Windows](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Adding-Batch-Users/#setting-up-a-new-microsoft-ms-lsam-batch-user) in the **Enterprise Manager** online help.
 
 :::tip
 SMA Technologies strongly recommends running as Local System account.
@@ -90,7 +90,7 @@ To add advanced Windows privileges for the domain user, complete the following s
 3. Select **Local Security Policy** to open the Local Security Settings editor.
 4. Select **Local Policies** under **Security Settings** and select **User Rights Assignment**.
 5. Select each privilege from the list above and select the **Add User Or Group** button.
-6. In the **Select Users Or Groups** dialog box, select **Locations** and select the machine or domain depending on whether you are adding a local user or a domain user.
+6. In the **Select Users Or Groups** window, select **Locations** and select the machine or domain depending on whether you are adding a local user or a domain user.
 7. In the object name field, enter the name of the user. For adding Local System account, select the current machine and enter `SYSTEM`.
 8. Repeat steps 6 and 7 for each privilege. The privileges are assigned.
 

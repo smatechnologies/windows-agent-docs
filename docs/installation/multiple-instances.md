@@ -34,7 +34,7 @@ Multiple instances of the Windows Agent can be installed on a single machine, ea
 
 ## New installation
 
-If additional agent instances are needed after installing the initial Windows Agent, repeat the [Install the Windows Agent](install#install-the-windows-agent) procedure. The installation package automatically transforms to install new instances of the agent. After installing each new instance, define a new machine in OpCon with a unique name and port number using the procedure for [Machine creation](install#machine-creation).
+If additional agent instances are needed after installing the initial Windows Agent, repeat the [Install the Windows Agent](install.md#install-the-windows-agent) procedure. The installation package automatically transforms to install new instances of the agent. After installing each new instance, define a new machine in OpCon with a unique name and port number using the procedure for [Machine creation](install.md#machine-creation).
 
 ## Manually install additional instances to unique directories
 
@@ -76,7 +76,7 @@ To configure the new agent instance, complete the following steps:
 2. Find the **MSLSAM.ini** file.
 3. Right-click the file, and select **Open With**.
 4. Select an ASCII text editor (for example, Notepad) from the menu.
-5. In the text editor, make any necessary modifications to the configuration options. For more information, refer to [MSLSAM.ini file configuration](../administration/configuration).
+5. In the text editor, make any necessary modifications to the configuration options. For more information, refer to [MSLSAM.ini file configuration](../administration/configuration.md).
 6. Define a unique **ShortServiceName** in the General Settings section.
 7. Define a unique **DisplayServiceName**.
 8. Define a unique **SocketNumberToSAM** in the TCP/IP Parameters section.
@@ -142,7 +142,7 @@ To confirm no jobs are running before upgrading, complete the following steps:
 2. Confirm the number of running jobs is **0** for the agent machine.
 3. If running jobs exist, contact the OpCon administrator to determine whether to:
    - Wait for the jobs to end **— or —**
-   - Kill the jobs. For more information, refer to [Kill command](../advanced-features/kill).
+   - Kill the jobs. For more information, refer to [Kill command](../advanced-features/kill.md).
 4. Repeat step 3 until the **Machines Status** screen indicates **Running Jobs** of **0/\<max\>**.
 5. Right-click the machine and select **Stop Communication** from the menu.
 
@@ -188,7 +188,7 @@ To verify the configuration settings after upgrade, complete the following steps
 5. Find the **NewMSLSAM.ini** file in the first instance's `<Configuration Directory>`.
 6. Right-click the file, and select **Open With**.
 7. Select an ASCII text editor (for example, Notepad) from the menu.
-8. In the text editor, compare the NewMSLSAM.ini file with the MSLSAM.ini file and copy any new settings from the new version into your existing MSLSAM.ini file. For more information, refer to [MSLSAM.ini file configuration](../administration/configuration).
+8. In the text editor, compare the NewMSLSAM.ini file with the MSLSAM.ini file and copy any new settings from the new version into your existing MSLSAM.ini file. For more information, refer to [MSLSAM.ini file configuration](../administration/configuration.md).
 
 ### Restart the service
 

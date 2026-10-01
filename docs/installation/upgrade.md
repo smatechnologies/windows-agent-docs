@@ -44,7 +44,7 @@ To confirm no jobs are running before upgrading, complete the following steps:
 2. Confirm the number of running jobs is **0** for the Windows machine.
 3. If running jobs exist, contact the OpCon administrator to determine whether to:
    - Wait for the processes to end **— or —**
-   - Kill the processes on the Windows side. For more information, refer to [Kill command](../advanced-features/kill).
+   - Kill the processes on the Windows side. For more information, refer to [Kill command](../advanced-features/kill.md).
 4. Repeat step 3 until the **Machines Status** screen indicates **Running Jobs** of **0/\<max\>**.
 5. Right-click the machine and select **Stop Communication** from the menu.
 
@@ -54,7 +54,7 @@ To stop the agent service, complete the following steps:
 
 1. Use menu path: **Start \> Administrative Tools \> Server Manager**. The **Administrative Tools** window displays.
 2. Select **Configuration** to expand it.
-3. Select the **Services** icon. The **Services** window displays.
+3. Select **Services**. The **Services** window displays.
 4. In the **Services** list, select **SMA OpCon Agent for Microsoft**.
 5. Use menu path: **Action \> Stop**.
 6. Confirm the service **Status** is **Stopped**.
@@ -101,7 +101,7 @@ To restart the agent service after upgrade, complete the following steps:
 
 1. Use menu path: **Start \> Administrative Tools \> Server Manager**. The **Administrative Tools** window displays.
 2. Select **Configuration** to expand it.
-3. Select the **Services** icon. The **Services** window displays.
+3. Select **Services**. The **Services** window displays.
 4. In the **Services** list, select **SMA OpCon Agent for Microsoft**.
 5. Use menu path: **Action \> Start**.
 6. Confirm the service **Status** is **Started**.

@@ -121,10 +121,10 @@ seterror %ERRLVL%
 ## FAQs
 
 **What happens if seterror is not the last command in the script?**  
-Any command that runs after seterror will overwrite ERRORLEVEL. For the intended exit code to reach OpCon, seterror must be the last command the script executes.
+Any command that runs after seterror will overwrite ERRORLEVEL. For the intended exit code to reach OpCon, seterror must be the last command the script runs.
 
 ## Glossary
 
-**ERRORLEVEL** — A Windows environment variable that stores the exit code of the most recently executed command. The Windows Agent reads this value when a job ends to determine the job's final status in OpCon.
+**ERRORLEVEL** — A Windows environment variable that stores the exit code of the most recently run command. The Windows Agent reads this value when a job ends to determine the job's final status in OpCon.
 
 **Exit code** — A numeric value returned by a process or command when it completes. The agent compares this value against the job's configured Failure Criteria to determine whether the job succeeded or failed.
