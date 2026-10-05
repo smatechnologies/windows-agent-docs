@@ -34,7 +34,7 @@ SMA Technologies provides a `kill.exe` command that forcibly ends a process by i
 To make `kill.exe` easier to access, copy the file into the Windows or WINNT directory. Because the Windows/WINNT directories are in the default path statement, the kill command is available for execution from any directory on the machine.
 :::
 
-This kill command only kills a specific PID and does not kill any child processes. If the job was started through OpCon, SMA Technologies strongly recommends killing the job through the Operations view or a `$JOB:KILL` event to ensure child processes are also killed. For more information on killing jobs from the Operations view, refer to [Jobs Status Change Commands](https://help.smatechnologies.com/opcon/core/operations/status-change-commands#jobs-status-change-commands) in the **Concepts** online help. The MSLSAM.ini file contains a setting named [KillWrapperOnJobKill](../administration/configuration#general-settings) that should be configured for the desired behavior with the OpCon Kill options.
+This kill command only kills a specific PID and does not kill any child processes. If the job was started through OpCon, SMA Technologies strongly recommends killing the job through the Operations view or a `$JOB:KILL` event to ensure child processes are also killed. For more information on killing jobs from the Operations view, refer to [Jobs Status Change Commands](https://help.smatechnologies.com/opcon/core/operations/status-change-commands#jobs-status-change-commands) in the **Concepts** online help. The MSLSAM.ini file contains a setting named [KillWrapperOnJobKill](../administration/configuration.md#general-settings) that should be configured for the desired behavior with the OpCon Kill options.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ kill <pid>
 - **kill**: The name of the command.
 - **\<pid\>**: The process ID of the process to kill.
 
-To obtain the ID number of the process to kill, view the processes in Windows Task Manager or view the list of process IDs displayed by the ShowRunning command. For more information, refer to [ShowRunning](showrunning).
+To obtain the ID number of the process to kill, view the processes in Windows Task Manager or view the list of process IDs displayed by the ShowRunning command. For more information, refer to [ShowRunning](showrunning.md).
 
 ## FAQs
 

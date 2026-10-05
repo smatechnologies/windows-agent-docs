@@ -51,7 +51,7 @@ A folder exists in the Archives folder for each day the agent processes. The fol
 
 As each log file fills up, the agent moves the log file into the current archive folder and renames it using the following naming convention: `LogName StartTime - StopTime.log`. For example, an MSLSAM archive file for the time range of 12:58:16 to 13:58:00 would be `MSLSAM 125816 - 135800.log`.
 
-By default, the agent retains 10 days of archived logs. Configure the MSLSAM.ini file to adjust this setting. For information on log and debug settings, refer to [Debug options](../administration/configuration#debug-options).
+By default, the agent retains 10 days of archived logs. Configure the MSLSAM.ini file to adjust this setting. For information on log and debug settings, refer to [Debug options](../administration/configuration.md#debug-options).
 
 :::note
 The agent does not purge any archive folders if files other than archived files are present.
@@ -59,7 +59,7 @@ The agent does not purge any archive folders if files other than archived files 
 
 ## Configuration options
 
-The following MSLSAM.ini settings control log file behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings control log file behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|
@@ -77,7 +77,7 @@ The `TraceLevel` and `TraceSAMMessages` settings are dynamic — the agent re-re
 MSLSAM.log contains standard agent processing information, configuration readings, and status messages. MSLSAMTrace.log captures SMANetCom communication messages between the agent and the OpCon server. MSLSAMTrace.log is only written when `TraceSAMMessages` is set to `ON`.
 
 **How do I retain more than 10 days of archived logs?**  
-Increase the `ArchiveDaysToKeep` value in the `[Debug Options]` section of MSLSAM.ini. The setting is dynamic — no service restart is required. See [Debug options](../administration/configuration#debug-options) for the full setting description.
+Increase the `ArchiveDaysToKeep` value in the `[Debug Options]` section of MSLSAM.ini. The setting is dynamic — no service restart is required. See [Debug options](../administration/configuration.md#debug-options) for the full setting description.
 
 ## Glossary
 

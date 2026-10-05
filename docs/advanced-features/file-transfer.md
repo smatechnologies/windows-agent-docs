@@ -40,9 +40,9 @@ The Windows Agent includes components that support the SMA File Transfer feature
 
 To enable file transfer for the Windows Agent, complete the following steps:
 
-1. Configure the `JORSSocket` parameter in the JORS Settings section of the MSLSAM.ini file. For more information, refer to [JORS settings](../administration/configuration#jors-settings).
-2. Configure the `SmaftServerSocket` parameter in the SMAFT Settings section of the MSLSAM.ini file. For more information, refer to [SMAFT settings](../administration/configuration#smaft-settings).
-3. Confirm that the **SMA OpCon Agent for Microsoft** and **SMA OpCon JORS for Microsoft** services are running. For more information, refer to [Start the agent](../administration/manage-lsam#start-the-agent).
+1. Configure the `JORSSocket` parameter in the JORS Settings section of the MSLSAM.ini file. For more information, refer to [JORS settings](../administration/configuration.md#jors-settings).
+2. Configure the `SmaftServerSocket` parameter in the SMAFT Settings section of the MSLSAM.ini file. For more information, refer to [SMAFT settings](../administration/configuration.md#smaft-settings).
+3. Confirm that the **SMA OpCon Agent for Microsoft** and **SMA OpCon JORS for Microsoft** services are running. For more information, refer to [Start the agent](../administration/manage-lsam.md#start-the-agent).
 4. In Enterprise Manager, configure the settings for the machine to match the MSLSAM.ini file.
    - For procedures, refer to [Configuring Advanced Machine Parameters and Properties](https://help.smatechnologies.com/opcon/core/Files/UI/Enterprise-Manager/Configuring-Advanced-Machine-Properties) in the **Enterprise Manager** online help.
    - For details on the settings to change, refer to the [Advanced Machine Configuration](https://help.smatechnologies.com/opcon/core/objects/machines#advanced-machine-configuration) section in the **Concepts** online help:
@@ -53,7 +53,7 @@ File transfer is enabled and ready to use when the services are running and the 
 
 ## Configuration options
 
-The following MSLSAM.ini settings configure SMA File Transfer. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings configure SMA File Transfer. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|

@@ -86,7 +86,7 @@ Programs may use these variables for reasons other than producing an E.C.O.F.
 
 The agent defines a variable called `SMA_MSLSAM_JOB_NAME` for every new job environment. Containing the job name and the unique job number from OpCon, this variable helps write the E.C.O.F. name required by the default E.C.O.F. directory.
 
-The value for the variable is in the format of `12-character job name` + space + `unique job number`. If the job name is less than 12 characters, spaces fill the extra character positions. For example, a job named BACKUP would have an `SMA_MSLSAM_JOB_NAME` value of `"BACKUP       12345"`. For a complete list of environment variables defined by the agent, refer to [Windows Agent environment variables](../reference/environment-variables).
+The value for the variable is in the format of `12-character job name` + space + `unique job number`. If the job name is less than 12 characters, spaces fill the extra character positions. For example, a job named BACKUP would have an `SMA_MSLSAM_JOB_NAME` value of `"BACKUP       12345"`. For a complete list of environment variables defined by the agent, refer to [Windows Agent environment variables](../reference/environment-variables.md).
 
 ### SMA_ECOF_DIRECTORY
 
@@ -125,7 +125,7 @@ To set up the `SMA_ECOF_DIRECTORY` system variable, complete the following steps
 
 ## Configuration options
 
-The following MSLSAM.ini settings control E.C.O.F. behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings control E.C.O.F. behavior. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|

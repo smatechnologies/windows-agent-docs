@@ -33,7 +33,7 @@ The `InitializationScript` and `TerminationScript` settings in MSLSAM.ini specif
 
 ## Configuration options
 
-The following MSLSAM.ini settings configure the initialization and termination scripts. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration).
+The following MSLSAM.ini settings configure the initialization and termination scripts. For complete setting descriptions, refer to [MSLSAM.ini configuration file](../administration/configuration.md).
 
 | Setting | What It Does | Default | Notes |
 |---|---|---|---|
@@ -46,7 +46,7 @@ The following MSLSAM.ini settings configure the initialization and termination s
 Windows uses session-based drive mapping. Drives mapped in one session are not accessible from another session for the same user. The agent's InitializationScript runs in the service session at startup, making those drives available to all jobs running under that session.
 
 **Does the InitializationScript run for every job?**  
-No. It runs once when the agent service starts. It is not re-executed for each individual job.
+No. It runs once when the agent service starts. It does not run again for each individual job.
 
 ## Glossary
 

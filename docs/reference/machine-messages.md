@@ -35,7 +35,7 @@ Windows Agent machine messages are exit condition codes in the 31000 series retu
 
 **Job fails with exit code 31001 or 31002** — The command line path (31001) or prerun command line path (31002) in the job definition is invalid. Verify that the path points to an existing executable on the agent machine and that the path is correctly formatted.
 
-**Job fails with exit code 31007** — The agent could not create a process for the job. The executable path may be valid but the process cannot be launched due to insufficient permissions or a missing dependency. Verify that the account running the job has execute rights on the target executable and that all required dependencies are accessible.
+**Job fails with exit code 31007** — The agent could not create a process for the job. The executable path may be valid but the process cannot be started due to insufficient permissions or a missing dependency. Verify that the account running the job has execute rights on the target executable and that all required dependencies are accessible.
 
 **Job fails with exit code 31010 or 31016** — The agent could not log on as the submitted user (31010), or the user name was not found because the user has never logged on to this machine (31016). Ensure the user specified in the job definition has logged on to the agent machine at least once to create a Windows user profile, then verify the credentials are correct.
 
