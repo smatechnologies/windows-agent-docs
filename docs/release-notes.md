@@ -15,6 +15,20 @@ This page lists changes for each Windows Agent release. Each entry is prefixed w
 - :eight_spoked_asterisk: — New feature or enhancement
 - :white_check_mark: — Bug fix
 
+## 26
+
+### 26.0.0
+
+2026 November
+
+### What's new
+
+:eight_spoked_asterisk: **OCAG-1167**: Added automatic TLS certificate management for the Windows Agent. Agents can now request, receive, and renew their own TLS certificates automatically, with certificate policy configured centrally from Solution Manager.
+
+:eight_spoked_asterisk: **OCAG-1247**: Updated the Windows Agent to run on a modern .NET runtime and combined its separate background transfer process into a single service, simplifying installation and making the agent restart faster and more reliably.
+
+:eight_spoked_asterisk: **OCAG-1323**: Added the ability to remotely upgrade the Windows Agent directly from Solution Manager, without needing to run the installer manually on the agent machine.
+
 ## 25
 
 ### 25.2.0
